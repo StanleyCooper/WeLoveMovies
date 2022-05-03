@@ -16,7 +16,7 @@ function MoviesList() {
   }, []);
 
   const list = movies.map((movie) => (
-    <article key={movie.movie_id} className="col-sm-12 col-md-6 col-lg-3 my-2">
+    <article key={movie.movie_id} className="col-sm-12 col-md-6 col-lg-3 my-2 border">
       <img
         alt={`${movie.title} Poster`}
         className="rounded"
