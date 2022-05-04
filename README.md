@@ -26,3 +26,7 @@ Starter code, tests, and challenge created by the Thinkful Team for the Engineer
 - Please visit the Thinkful website by clicking [here](https://www.thinkful.com/)
 - Starter Code: [WeLoveMovies](https://github.com/Thinkful-Ed/starter-movie-front-end)
 
+## Deployment
+
+App has been deployed with Heroku and be accessed [here](https://welovemovies-front-side.herokuapp.com/)
+
