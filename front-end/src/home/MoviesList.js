@@ -51,7 +51,7 @@ function MoviesList() {
   ));
 
   return (
-    <main>
+    <main className="flex-grow-1">
       <ErrorAlert error={error} /> 
       <h2 className="font-poppins ml-5" style={headingStyle}>Now Showing</h2>
       <div cla>
