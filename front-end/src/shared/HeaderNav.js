@@ -2,19 +2,28 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function HeaderNav() {
-  const style = {
-    padding: "1rem 0 3rem",
+  const navStyle = {
+    background: "#181818",
+    padding: "0.5rem 0 0.5rem",
   };
 
-  const italic = {
-    fontStyle: "italic",
-  };
+  const iconStyle = {
+    background: "#DBA506",
+    "border-radius": "4px",
+    padding: "0.1rem",
+    color: "black",
+    "font-weight": "bold"
+  }
+
+  const bold = {
+    "font-weight": "bold"
+  }
 
   return (
-    <ul className="nav justify-content-start" style={style}>
+    <ul className="nav justify-content-start" style={navStyle}>
       <li className="nav-item d-none d-lg-block d-xl-block">
         <Link className="font-poppins-heading nav-link mx-2 text-light" to="/">
-          <h1 className="h5" style={italic}>
+          <h1 className="h5" style={iconStyle}>
             WeLoveMovies
           </h1>
         </Link>
@@ -23,16 +32,18 @@ function HeaderNav() {
         <Link
           className="nav-link mx-2 font-weight-light text-light"
           to="/movies"
+          style={bold}
         >
-          All Movies
+          <h5>Movies</h5>
         </Link>
       </li>
       <li className="nav-item">
         <Link
           className="nav-link mx-2 font-weight-light text-light"
           to="/theaters"
+          style={bold}
         >
-          All Theaters
+          <h5>Theaters</h5>
         </Link>
       </li>
     </ul>
