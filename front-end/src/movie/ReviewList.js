@@ -2,6 +2,12 @@ import React from "react";
 import Review from "./Review";
 
 function ReviewList({ reviews = [], deleteReview, setReviewScore }) {
+  
+  const headingStyle ={
+    color: "#DBA506",
+    "font-weight": "bold",
+  }
+  
   if (reviews.length) {
     const list = reviews
       .sort((leftReview, rightReview) => {
@@ -18,9 +24,11 @@ function ReviewList({ reviews = [], deleteReview, setReviewScore }) {
         />
       ));
 
+  
+  
     return (
       <section className="mt-4">
-        <h3>Reviews</h3>
+        <h3 style={headingStyle}>Reviews</h3>
         {list}
       </section>
     );

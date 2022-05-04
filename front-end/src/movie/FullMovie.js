@@ -34,8 +34,17 @@ function FullMovie() {
     updateReview(reviewId, { score }).then(() => loadMovie(movieId));
   }
 
+  const headingStyle ={
+    color: "#DBA506",
+    "font-weight": "bold",
+  }
+
+  const bodyStyle ={
+    color: "white",
+  }
+
   return (
-    <div className="container">
+    <div className="container" style={bodyStyle}>
       <ErrorAlert error={error} />
       <section className="row mt-4">
         <article className="col-sm-12 col-md-6 col-lg-3">

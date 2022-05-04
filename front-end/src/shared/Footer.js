@@ -1,7 +1,7 @@
 function Footer() {
 
     const style = {
-        background: "#181818",
+        background: "black",
         "margin-top": "50px",
         "padding-bottom": "40px"
     }

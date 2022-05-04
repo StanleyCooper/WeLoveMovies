@@ -51,11 +51,13 @@ function MoviesList() {
   ));
 
   return (
-    <main className="flex-grow-1">
-      <ErrorAlert error={error} /> 
-      <h2 className="font-poppins ml-5" style={headingStyle}>Now Showing</h2>
-      <div cla>
-        <section className="d-inline-flex flex-wrap px-5">{list}</section>
+    <main>
+      <div className="px-5">
+        <ErrorAlert error={error} /> 
+        <h2 className="font-poppins ml-4" style={headingStyle}>Now Showing</h2>
+        <div>
+          <section className="d-inline-flex flex-wrap px-5">{list}</section>
+        </div>
       </div>
     </main>
   );

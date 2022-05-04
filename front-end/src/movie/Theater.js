@@ -1,9 +1,15 @@
 import React from "react";
 
 function Theater({ theater }) {
+
+  const theaterStyle = {
+    color: "white",
+    background: "#181818"
+  }
+
   return (
     <article className="col-sm-12 col-md">
-      <div className="card">
+      <div className="card" style={theaterStyle}>
         <div className="card-body">
           <h5>{theater.name}</h5>
           <address>

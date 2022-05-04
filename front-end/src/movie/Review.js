@@ -20,6 +20,12 @@ function Review({ review, deleteReview, setReviewScore }) {
 
   const { critic } = review;
 
+  const button = {
+    background: "#DBA506",
+    color: "black",
+    "font-weight": "bold"
+  }
+
   return (
     <section className="border p-4 mb-4">
       <h4>
@@ -47,7 +53,7 @@ function Review({ review, deleteReview, setReviewScore }) {
         </button>
       </p>
 
-      <button className="btn btn-danger" onClick={() => deleteReview(review)}>
+      <button className="btn" style={button} onClick={() => deleteReview(review)}>
         Destroy Review
       </button>
     </section>

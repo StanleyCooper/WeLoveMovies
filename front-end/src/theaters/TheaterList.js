@@ -18,10 +18,15 @@ function TheaterList() {
     <Theater key={theater.theater_id} theater={theater} />
   ));
 
+  const headingStyle ={
+    color: "#DBA506",
+    "font-weight": "bold",
+  }
+
   return (
     <main className="container">
       <ErrorAlert error={error} />
-      <h2 className="font-poppins">All Theaters</h2>
+      <h2 className="font-poppins" style={headingStyle}>All Theaters</h2>
       <hr />
       <section className="row">{list}</section>
     </main>

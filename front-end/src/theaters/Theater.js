@@ -2,8 +2,18 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function Theater({ theater }) {
+
+  const headingStyle ={
+    color: "#DBA506",
+    "font-weight": "bold",
+  }
+
+  const bodyStyle ={
+    color: "white",
+  }
+
   return (
-    <article className="col-12 mb-4">
+    <article className="col-12 mb-4" style={bodyStyle}>
       <div className="row">
         <aside className="col">
           <h2>{theater.name}</h2>
