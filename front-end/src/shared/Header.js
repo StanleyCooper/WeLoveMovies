@@ -14,7 +14,7 @@ function Header() {
   }
 
   return (
-    <div
+    <header
       className="jumbotron jumbotron-fluid text-white border-bottom border-dark pt-0"
       style={style}
     >
@@ -26,7 +26,7 @@ function Header() {
           theatres near you.
         </p>
       </div>
-    </div>
+    </header>
   );
 }
 

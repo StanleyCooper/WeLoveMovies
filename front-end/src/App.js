@@ -1,4 +1,5 @@
 import Header from "./shared/Header";
+import Footer from "./shared/Footer";
 import MoviesList from "./home/MoviesList";
 import DetailedMoviesList from "./movies/DetailedMoviesList";
 import FullMovie from "./movie/FullMovie";
@@ -23,6 +24,7 @@ function App() {
           <TheaterList />
         </Route>
       </Switch>
+      <Footer />
     </Router>
   );
 }
